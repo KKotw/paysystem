@@ -1,0 +1,25 @@
+﻿<Window x:Class="PaySystem.VIEW.PaySuccess"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PaySystem.VIEW"
+        mc:Ignorable="d"
+        Title="PaySuccess" Height="600" Width="800" WindowStyle="None" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="441*"/>
+            <RowDefinition Height="151*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button" Content="打印小票" Margin="20,39,120,50" Click="button_Click" Grid.Row="1" Grid.Column="1" Background="#FF00C17F" BorderBrush="{x:Null}" Foreground="White" FontSize="36"/>
+        <Button x:Name="button1" Content="返回主页" Margin="120,39,20,50" Click="button1_Click" Grid.Row="1" Background="#FF419AFF" BorderBrush="{x:Null}" Foreground="White" FontSize="36"/>
+        <Grid Margin="57" Background="#FF2F3466" Grid.ColumnSpan="2">
+            <Label x:Name="label" Content="支付状态" Margin="57" FontSize="48" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        </Grid>
+
+    </Grid>
+</Window>

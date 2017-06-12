@@ -1,0 +1,1 @@
+PaySystem.exe DongleUserId=19521 Key=1587

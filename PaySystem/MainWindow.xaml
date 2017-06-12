@@ -1,0 +1,26 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PaySystem"
+        xmlns:VIEW="clr-namespace:PaySystem.VIEW" x:Class="PaySystem.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1024" Width="1280" WindowStyle="None" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="671*"/>
+            <RowDefinition Height="345*"/>
+        </Grid.RowDefinitions>
+
+
+        <Button x:Name="button" Content="close" HorizontalAlignment="Left" Width="57" Click="button_Click" Opacity="0.01" Margin="10,10,0,0" Grid.Row="1" Height="57" VerticalAlignment="Top" Background="{x:Null}"/>
+        <Button x:Name="button_Copy" Content="close" Height="57" VerticalAlignment="Top" HorizontalAlignment="Right" Width="57" Click="button_Copy_Click" Opacity="0.01" Margin="0,10,10,0" Grid.Row="1" Background="{x:Null}"/>
+        <Button x:Name="button_Copy1" Content="close" HorizontalAlignment="Left" Height="57" VerticalAlignment="Bottom" Width="57" Click="button_Copy1_Click" Opacity="0.01" Grid.Row="1" Background="{x:Null}"/>
+        <Button x:Name="button_Copy2" Content="close" HorizontalAlignment="Right" Height="57" VerticalAlignment="Bottom" Width="57" Click="button_Copy2_Click" Opacity="0.01" Grid.Row="1" Background="{x:Null}"/>
+        <Button x:Name="button1" Content="自动停车支付" Margin="300,0,300,122" Background="#FF00C17F" Foreground="{DynamicResource {x:Static SystemColors.MenuBrushKey}}" FontSize="30" Click="button1_Click" Grid.Row="1" Height="101" VerticalAlignment="Bottom"/>
+        
+        <Image x:Name="image" Margin="10" Stretch="Fill"/>
+
+    </Grid>
+</Window>

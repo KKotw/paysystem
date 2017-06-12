@@ -1,0 +1,32 @@
+﻿<Window x:Class="PaySystem.VIEW.AdminManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PaySystem.VIEW"
+        mc:Ignorable="d"
+        Title="后台管理程序" Height="600" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="437*"/>
+            <ColumnDefinition Width="355*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="284*"/>
+            <RowDefinition Height="93*"/>
+            <RowDefinition Height="192*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="10,82,0,10" TextWrapping="Wrap" Text="当前钱箱钱数" Width="772" FontSize="24" Grid.ColumnSpan="2"/>
+        <Button x:Name="button1" Content="将可找零钱箱钱币转移至不可找钱箱" Margin="10" Grid.Row="1" Click="button1_Click"/>
+        <Button x:Name="button2" Content="取出指定金额钱数" Margin="10,10,188,37" Grid.Row="2" Click="button2_Click"/>
+        <Label x:Name="label1" Grid.ColumnSpan="2" Content="请补齐钱箱钱币。5元30张；10元30张；绿/蓝灯亮起可投币" Height="52" Margin="10,10,10,0" VerticalAlignment="Top" FontSize="22"/>
+        <RadioButton x:Name="radioButton0" Content="5.00" HorizontalAlignment="Left" Height="17" Margin="314,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="113"/>
+        <RadioButton x:Name="radioButton1" Content="10.00" HorizontalAlignment="Left" Margin="314,32,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="关闭程序" Grid.Column="1" Margin="10,10,21,10" Grid.Row="1" Grid.RowSpan="2" FontSize="48" Click="button_Click"/>
+        <RadioButton x:Name="radioButton2" Content="20.00" HorizontalAlignment="Left" Margin="314,51,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton3" Content="50.00" HorizontalAlignment="Left" Height="20" Margin="314,70,0,0" Grid.Row="2" VerticalAlignment="Top" Width="78"/>
+        <RadioButton x:Name="radioButton4" Content="100.00" HorizontalAlignment="Left" Margin="314,90,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="选择要取出金额钱数" HorizontalAlignment="Left" Margin="282,117,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
